@@ -15,3 +15,26 @@
     background-color: white;
     border-radius: 10px;
 }
+
+.breaktime{
+    text-align: center;
+    background-color: skyblue;
+    padding: 15px 5px;
+    border-radius: 10px;
+}
+.breaktime button {
+    margin-right: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.breaktime button:hover {
+    background-color: cyan;
+}
+
+.time {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+}

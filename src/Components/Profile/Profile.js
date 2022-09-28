@@ -2,6 +2,45 @@ import React from 'react';
 import './Profile.css';
 
 const Profile = () => {
+
+    const firstBreak = () => {
+        const times = document.getElementById('first-time');
+        const breakTimes = document.getElementById('set-break')
+        const time = times.innerText;
+        breakTimes.innerText = time;
+        localStorage.setItem('break-time', JSON.stringify(time));
+    }
+    const secondBreak = () => {
+        const times = document.getElementById('second-time');
+        const breakTimes = document.getElementById('set-break')
+        const time = times.innerText;
+        breakTimes.innerText = time;
+        localStorage.setItem('break-time', JSON.stringify(time));
+    }
+    const thirdBreak = () => {
+        const times = document.getElementById('third-time');
+        const breakTimes = document.getElementById('set-break')
+        const time = times.innerText;
+        breakTimes.innerText = time;
+        localStorage.setItem('break-time', JSON.stringify(time));
+    }
+    const fourthBreak = () => {
+        const times = document.getElementById('fourth-time');
+        const breakTimes = document.getElementById('set-break')
+        const time = times.innerText;
+        breakTimes.innerText = time;
+        localStorage.setItem('break-time', JSON.stringify(time));
+    }
+    const fifthBreak = () => {
+        const times = document.getElementById('fifth-time');
+        const breakTimes = document.getElementById('set-break')
+        const time = times.innerText;
+        breakTimes.innerText = time;
+        localStorage.setItem('break-time', JSON.stringify(time));
+    }
+
+    const getStoredTime = JSON.parse(localStorage.getItem('break-time'));
+
     return (
         <div className='profiles'>
             <h2>Profile</h2>
@@ -24,7 +63,23 @@ const Profile = () => {
                 </div>
             </div>
             <div>
+                <h4>Add a break</h4>
+                <div className='breaktime'>
+                    <button onClick={firstBreak}><strong id='first-time'>10</strong>s</button>
+                    <button onClick={secondBreak}><strong id='second-time'>20</strong>s</button>
+                    <button onClick={thirdBreak}><strong id='third-time'>30</strong>s</button>
+                    <button onClick={fourthBreak}><strong id='fourth-time'>40</strong>s</button>
+                    <button onClick={fifthBreak}><strong id='fifth-time'>50</strong>s</button>
+                </div>
+            </div>
+            <div>
                 <h4>Exercise Details:</h4>
+                <div className='time'>
+                    <p>Exercise time: <span>00</span>minutes</p>
+                </div>
+                <div className='time'>
+                    <p>Break time: <span id='set-break'>{(getStoredTime) ? getStoredTime : 0}</span>seconds</p>
+                </div>
             </div>
         </div>
     );
