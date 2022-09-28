@@ -5,9 +5,13 @@
     grid-template-columns: 4fr 1fr;
 }
 
-.container h2 {
+.container h1 {
     color: blue;
     font-size: 40px;
     margin-top: 60px;
     font-family: 'Times New Roman', Times, serif;
+}
+
+.container h1:hover {
+    color: cyan;
 }
