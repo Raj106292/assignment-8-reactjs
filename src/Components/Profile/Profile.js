@@ -1,7 +1,21 @@
 import React from 'react';
 import './Profile.css';
 
-const Profile = () => {
+const Profile = (props) => {
+    const time = props.selected.time;
+    
+    const excTimestr = document.getElementById('exc-time');
+    let excTime = 0;
+    if(excTimestr){
+        excTime = (parseFloat(excTimestr.innerText));
+    }
+    let times = excTime;
+    if(time){
+        times = times + parseFloat(time)
+    }
+    else{
+        times = 0;
+    }
 
     const firstBreak = () => {
         const times = document.getElementById('first-time');
@@ -75,7 +89,7 @@ const Profile = () => {
             <div>
                 <h4>Exercise Details:</h4>
                 <div className='time'>
-                    <p>Exercise time: <span>00</span>minutes</p>
+                    <p>Exercise time: <span id='exc-time'>{times}</span>minutes</p>
                 </div>
                 <div className='time'>
                     <p>Break time: <span id='set-break'>{(getStoredTime) ? getStoredTime : 0}</span>seconds</p>

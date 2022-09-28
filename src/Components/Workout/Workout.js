@@ -12,7 +12,7 @@ const Workout = (props) => {
                 <p>Sets: {set}sets</p>
             </div>
             <div>
-                <button className='update-btn'>Add To List</button>
+                <button onClick={() => props.handleAddToList(id)} className='update-btn'>Add To List</button>
             </div>
         </div>
     );

@@ -15,6 +15,13 @@ const Workouts = () => {
         .catch(error => console.log(error.message))
     },[])
 
+    const handleAddToList = (id) => {
+        const selected = workouts.find(workout => workout.id === id);
+        setSelected(selected);
+    }
+
+    const [selected , setSelected] = useState([]);
+
     return (
         <div className='container'>
             <div>
@@ -23,12 +30,13 @@ const Workouts = () => {
                     {
                         workouts.map(workout => <Workout
                             key={workout.id}
-                            workout={workout}></Workout>)
+                            workout={workout}
+                            handleAddToList={handleAddToList}></Workout>)
                     }
                 </div>
             </div>
             <div className='profile-container'>
-                <Profile></Profile>
+                <Profile selected={selected}></Profile>
             </div>
         </div>
     );
