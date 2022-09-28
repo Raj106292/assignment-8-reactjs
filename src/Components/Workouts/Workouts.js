@@ -20,7 +20,9 @@ const Workouts = () => {
                 <h1><FontAwesomeIcon icon={faDumbbell}></FontAwesomeIcon> Fitness Zone</h1>
                 <div className='workouts-container'>
                     {
-                        workouts.map(workout => <Workout key={workout.id}></Workout>)
+                        workouts.map(workout => <Workout
+                            key={workout.id}
+                            workout={workout}></Workout>)
                     }
                 </div>
             </div>

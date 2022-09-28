@@ -1,9 +1,11 @@
 import React from 'react';
+import './Workout.css'
 
 const Workout = (props) => {
+    const {id, image, name, time, set} = props.workout
     return (
-        <div>
-            <h2>Name: {props.name}</h2>
+        <div className='all-workout'>
+            <img src={image} alt="" />
         </div>
     );
 };
