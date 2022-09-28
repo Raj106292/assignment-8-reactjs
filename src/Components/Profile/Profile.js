@@ -1,4 +1,6 @@
 import React from 'react';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './Profile.css';
 
 const Profile = (props) => {
@@ -55,6 +57,8 @@ const Profile = (props) => {
 
     const getStoredTime = JSON.parse(localStorage.getItem('break-time'));
 
+    const showToast = () => toast(("Congrats! You have completed your daily task"));
+
     return (
         <div className='profiles'>
             <h2>Profile</h2>
@@ -88,12 +92,16 @@ const Profile = (props) => {
             </div>
             <div>
                 <h4>Exercise Details:</h4>
-                <div className='time'>
+                <div className='time' style={{backgroundColor: 'white', paddingTop: '5px', paddingLeft: '5px', paddingBottom: '5px', borderRadius: '10px'}}>
                     <p>Exercise time: <span id='exc-time'>{times}</span>minutes</p>
                 </div>
-                <div className='time'>
+                <div className='time' style={{backgroundColor: 'white', paddingTop: '5px', paddingLeft: '5px', paddingBottom: '5px', borderRadius: '10px'}}>
                     <p>Break time: <span id='set-break'>{(getStoredTime) ? getStoredTime : 0}</span>seconds</p>
                 </div>
+            </div>
+            <div className='btn-active'>
+                <button onClick={showToast} className='activity-btn'>Activity Done</button>
+                <ToastContainer></ToastContainer>
             </div>
         </div>
     );

@@ -38,3 +38,18 @@
     font-weight: 600;
     margin-top: 20px;
 }
+
+.btn-active {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.activity-btn {
+    padding: 10px;
+    width: 70%;
+    border-radius: 10px;
+    background-color: rgb(151, 63, 234);
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+}
