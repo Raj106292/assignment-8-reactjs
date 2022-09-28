@@ -1,6 +1,7 @@
 import { faDumbbell } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
+import Profile from '../Profile/Profile';
 import Workout from '../Workout/Workout';
 import './Workouts.css';
 
@@ -26,7 +27,9 @@ const Workouts = () => {
                     }
                 </div>
             </div>
-            <div className='profile-container'>Profile</div>
+            <div className='profile-container'>
+                <Profile></Profile>
+            </div>
         </div>
     );
 };

@@ -19,7 +19,7 @@
 }
 
 .profile-container{
-    text-align: center;
+    background-color: rgb(212, 201, 201);
 }
 
 @media screen and (max-width: 750px) {
