@@ -1,0 +1,44 @@
+[
+    {
+      "id": "01",
+      "image": "https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "name": "Trademill",
+      "time": "20",
+      "set": "3"
+    },
+    {
+      "id": "02",
+      "image": "https://photos.demandstudios.com/getty/article/64/120/536923379.jpg",
+      "name": "DeadLift",
+      "time": "10",
+      "set": "5"
+    },
+    {
+      "id": "03",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU16Dlcee3MYX5rwQQX8QEg3e8Q8a8X1yhyB2_D41sQhvvOfguf-DWZM2KNdGCbndsxbM&usqp=CAU",
+      "name": "Push-Up",
+      "time": "15",
+      "set": "5"
+    },
+    {
+      "id": "04",
+      "image": "https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/03/27/18/istock-656750902-0.jpg?width=1200",
+      "name": "Plank",
+      "time": "5",
+      "set": "3"
+    },
+    {
+      "id": "05",
+      "image": "https://www.mensjournal.com/wp-content/uploads/mf/_main_squat.jpg?w=1188&h=630&crop=1&quality=86&strip=all",
+      "name": "Back Squats",
+      "time": "5",
+      "set": "2"
+    },
+    {
+      "id": "06",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHCCO2MpLPDotyYHnLIi9Eu6d2tWMsBIn6bA&usqp=CAU",
+      "name": "Lunges",
+      "time": "5",
+      "set": "10(for each leg)"
+    }
+  ]
